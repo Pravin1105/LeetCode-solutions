@@ -6,6 +6,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
+| [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
 | [0198-house-robber](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0198-house-robber) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
 ## Hash Table
@@ -21,6 +22,7 @@
 | ------- |
 | [0062-unique-paths](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
+| [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
 | [0198-house-robber](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0198-house-robber) |
 ## Math
 |  |
@@ -34,4 +36,5 @@
 |  |
 | ------- |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
+| [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
 <!---LeetCode Topics End-->
