@@ -29,3 +29,81 @@
 <ul>
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 </ul>
+
+# Unique Paths - Dynamic Programming
+
+## Approach
+
+To reach any cell in the grid, the robot can only come from:
+
+- The cell directly **above** it.
+- The cell directly **to the left** of it.
+
+Therefore, the number of unique paths to a cell is simply the sum of the paths to these two neighboring cells.
+
+Let `dp[i][j]` represent the number of unique paths to reach cell `(i, j)`.
+
+The recurrence relation is:
+
+```text
+dp[i][j] = dp[i-1][j] + dp[i][j-1]
+```
+
+### Why initialize with `1`?
+
+- Every cell in the **first row** can only be reached by moving right.
+- Every cell in the **first column** can only be reached by moving down.
+
+Hence, there is exactly **one** way to reach each of these cells, so the entire first row and first column are initialized to `1`.
+
+### Example
+
+For `m = 3` and `n = 4`:
+
+Initial DP table:
+
+```
+1 1 1 1
+1 1 1 1
+1 1 1 1
+```
+
+Fill the remaining cells:
+
+```
+1 1 1 1
+1 2 3 4
+1 3 6 10
+```
+
+The answer is:
+
+```
+dp[2][3] = 10
+```
+
+---
+
+## Algorithm
+
+1. Create an `m × n` DP table initialized with `1`.
+2. Iterate from the second row and second column.
+3. For each cell:
+   - Compute `dp[i][j] = dp[i-1][j] + dp[i][j-1]`.
+4. Return the value in the bottom-right corner.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(m × n)`
+  - Every cell in the grid is processed exactly once.
+
+- **Space Complexity:** `O(m × n)`
+  - An `m × n` DP table is used.
+
+---
+
+## Key Idea
+
+Each cell's value depends only on the number of ways to reach the cell directly above and the cell directly to its left. By building the DP table from the top-left to the bottom-right, we efficiently compute the total number of unique paths without recalculating overlapping subproblems.
