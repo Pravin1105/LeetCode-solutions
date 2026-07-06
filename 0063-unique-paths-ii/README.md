@@ -34,3 +34,81 @@ There are two ways to reach the bottom-right corner:
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 	<li><code>obstacleGrid[i][j]</code> is <code>0</code> or <code>1</code>.</li>
 </ul>
+
+## Approach
+
+This problem is an extension of the **Unique Paths** problem, where some cells contain obstacles that cannot be traversed.
+
+Let `dp[i][j]` represent the number of unique paths to reach cell `(i, j)`.
+
+There are two cases for each cell:
+
+- If the cell contains an obstacle (`1`), it cannot be reached, so:
+  ```text
+  dp[i][j] = 0
+  ```
+- Otherwise, the robot can only arrive from:
+  - The cell above.
+  - The cell to the left.
+
+  Therefore:
+
+  ```text
+  dp[i][j] = dp[i-1][j] + dp[i][j-1]
+  ```
+
+Special handling is required for the first row, first column, and the starting cell.
+
+### Example
+
+Input:
+
+```
+0 0 0
+0 1 0
+0 0 0
+```
+
+DP Table Construction:
+
+```
+1 1 1
+1 0 1
+1 1 2
+```
+
+The bottom-right cell contains `2`, meaning there are two unique paths.
+
+---
+
+## Algorithm
+
+1. Create an `m × n` DP table.
+2. Traverse every cell in the grid.
+3. If the current cell is an obstacle:
+   - Set `dp[i][j] = 0`.
+4. Otherwise:
+   - If it is the starting cell, set `dp[0][0] = 1`.
+   - If it is in the first row, copy the value from the left.
+   - If it is in the first column, copy the value from above.
+   - Otherwise, compute:
+     ```
+     dp[i][j] = dp[i-1][j] + dp[i][j-1]
+     ```
+5. Return the value in the bottom-right cell.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(m × n)`
+  - Each cell is processed exactly once.
+
+- **Space Complexity:** `O(m × n)`
+  - An `m × n` DP table is maintained.
+
+---
+
+## Key Idea
+
+Every non-obstacle cell inherits the number of paths from its top and left neighbors, while obstacle cells contribute **zero** paths. By filling the DP table row by row, all required subproblems are solved before they are needed, resulting in an efficient dynamic programming solution.
