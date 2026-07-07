@@ -35,3 +35,84 @@ The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above)
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you&nbsp;do this using only <code>O(n)</code> extra space, where <code>n</code> is the total number of rows in the triangle?
+
+## Approach
+
+Starting from the top of the triangle, each element can be reached from one or two elements in the previous row:
+
+- The **first element** of every row can only be reached from the first element of the previous row.
+- The **last element** of every row can only be reached from the last element of the previous row.
+- Every **middle element** can be reached from either:
+  - The element directly above.
+  - The element above-left.
+
+Let `dp[i][j]` represent the minimum path sum to reach the element at row `i` and column `j`.
+
+The transition for middle elements is:
+
+```text
+dp[i][j] = triangle[i][j] + min(dp[i-1][j-1], dp[i-1][j])
+```
+
+The DP table is initialized as a copy of the input triangle, and each row is updated from top to bottom. The minimum value in the last row gives the answer.
+
+### Example
+
+Input:
+
+```
+      2
+     3 4
+    6 5 7
+   4 1 8 3
+```
+
+DP Table Construction:
+
+```
+      2
+     5 6
+    11 10 13
+   15 11 18 16
+```
+
+The minimum path sum is:
+
+```
+11
+```
+
+Path:
+
+```
+2 → 3 → 5 → 1
+```
+
+---
+
+## Algorithm
+
+1. Make a DP table.
+2. Traverse the triangle from the second row.
+3. For each row:
+   - Update the first element using the first element of the previous row.
+   - Update all middle elements using the minimum of the two possible parent elements.
+   - Update the last element using the last element of the previous row.
+4. Traverse the last row of the DP table to find the minimum value.
+5. Return the minimum path sum.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n²)`
+  - Every element in the triangle is processed exactly once.
+
+- **Space Complexity:** `O(n²)`
+  - A separate DP table of the same size as the triangle is maintained.
+
+---
+
+## Key Idea
+
+Each position stores the minimum cost required to reach it from the top. Since every element depends only on the valid parent elements in the previous row, the solution builds the answer incrementally using Dynamic Programming. The smallest value in the final row represents the minimum path sum from the top to the bottom of the triangle.
