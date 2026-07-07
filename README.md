@@ -11,6 +11,7 @@
 | [0136-single-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0136-single-number) |
 | [0198-house-robber](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0198-house-robber) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
+| [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
 ## Hash Table
 |  |
 | ------- |
@@ -19,6 +20,7 @@
 |  |
 | ------- |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
+| [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -50,4 +52,12 @@
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0231-power-of-two) |
+## Greedy
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
+## Sorting
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
 <!---LeetCode Topics End-->
