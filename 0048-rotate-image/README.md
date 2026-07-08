@@ -25,3 +25,94 @@
 	<li><code>1 &lt;= n &lt;= 20</code></li>
 	<li><code>-1000 &lt;= matrix[i][j] &lt;= 1000</code></li>
 </ul>
+
+## Approach
+
+A **90° clockwise rotation** of a square matrix can be achieved in two simple steps:
+
+1. **Transpose** the matrix.
+2. **Reverse** every row.
+
+### Step 1: Transpose
+
+Transposing swaps every element across the main diagonal:
+
+```text
+matrix[i][j] ↔ matrix[j][i]
+```
+
+Only the upper triangular portion (including the diagonal) is traversed to avoid swapping elements twice.
+
+Example:
+
+```
+Original Matrix
+
+1 2 3
+4 5 6
+7 8 9
+
+↓
+
+Transpose
+
+1 4 7
+2 5 8
+3 6 9
+```
+
+### Step 2: Reverse Each Row
+
+Reversing every row converts the transposed matrix into a 90° clockwise rotated matrix.
+
+```
+Transpose
+
+1 4 7
+2 5 8
+3 6 9
+
+↓
+
+Reverse Each Row
+
+7 4 1
+8 5 2
+9 6 3
+```
+
+This is the required rotated matrix.
+
+---
+
+## Algorithm
+
+1. Find the size `n` of the matrix.
+2. Transpose the matrix by swapping:
+   ```
+   matrix[i][j] ↔ matrix[j][i]
+   ```
+   for all `j ≥ i`.
+3. Reverse every row of the matrix.
+4. The matrix is now rotated by 90° clockwise.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n²)`
+  - Transposition processes each element once, and reversing all rows also takes `O(n²)`.
+
+- **Space Complexity:** `O(1)`
+  - The rotation is performed in-place without using any additional matrix.
+
+---
+
+## Key Idea
+
+A 90° clockwise rotation can be decomposed into two in-place operations:
+
+1. **Transpose** the matrix to interchange rows and columns.
+2. **Reverse each row** to reposition the elements into their rotated locations.
+
+This approach avoids using an extra matrix while maintaining optimal time and space complexity.
