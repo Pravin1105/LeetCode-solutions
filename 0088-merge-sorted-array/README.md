@@ -46,3 +46,78 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 <p>&nbsp;</p>
 <p><strong>Follow up: </strong>Can you come up with an algorithm that runs in <code>O(m + n)</code> time?</p>
+
+## Approach
+
+Since `nums1` has enough extra space at the end to accommodate all elements of `nums2`, we can merge the arrays **from the back**.
+
+Three pointers are used:
+
+- `i` points to the last valid element in `nums1`.
+- `j` points to the last element in `nums2`.
+- `idx` points to the last position in `nums1`, where the next largest element should be placed.
+
+At each step:
+
+- Compare `nums1[i]` and `nums2[j]`.
+- Place the larger element at `nums1[idx]`.
+- Move the corresponding pointer backward.
+
+Once one array is exhausted, copy the remaining elements of the other array.
+
+### Example
+
+Input:
+
+```
+nums1 = [1,2,3,0,0,0], m = 3
+nums2 = [2,5,6],       n = 3
+```
+
+Processing from the end:
+
+```
+[1,2,3,0,0,6]
+[1,2,3,0,5,6]
+[1,2,3,3,5,6]
+[1,2,2,3,5,6]
+[1,2,2,3,5,6]
+[1,2,2,3,5,6]
+```
+
+Output:
+
+```
+[1,2,2,3,5,6]
+```
+
+---
+
+## Algorithm
+
+1. Initialize three pointers:
+   - `i = m - 1`
+   - `j = n - 1`
+   - `idx = m + n - 1`
+2. While both arrays contain elements:
+   - Compare `nums1[i]` and `nums2[j]`.
+   - Place the larger element at `nums1[idx]`.
+   - Move the corresponding pointer and decrement `idx`.
+3. Copy any remaining elements from `nums1` or `nums2`.
+4. The merged array is stored in `nums1`.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(m + n)`
+  - Each element from both arrays is processed exactly once.
+
+- **Space Complexity:** `O(1)`
+  - The merge is performed in-place without using any additional array.
+
+---
+
+## Key Idea
+
+By filling `nums1` from the end, we avoid overwriting its existing elements before they are compared. This allows the two sorted arrays to be merged in-place using constant extra space.
