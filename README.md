@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
+| [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
 | [0120-triangle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0120-triangle) |
@@ -32,6 +33,7 @@
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0062-unique-paths) |
 | [0231-power-of-two](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0231-power-of-two) |
 ## Combinatorics
@@ -41,6 +43,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
 ## Bit Manipulation
