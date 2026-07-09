@@ -14,6 +14,7 @@
 | [0136-single-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0136-single-number) |
 | [0198-house-robber](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0198-house-robber) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
+| [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
 ## Hash Table
 |  |
@@ -24,6 +25,7 @@
 | ------- |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
+| [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
 ## Dynamic Programming
 |  |
@@ -54,6 +56,7 @@
 | ------- |
 | [0136-single-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0136-single-number) |
 | [0231-power-of-two](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0231-power-of-two) |
+| [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 ## Recursion
 |  |
 | ------- |
@@ -68,4 +71,8 @@
 | [0056-merge-intervals](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
+## Binary Search
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
