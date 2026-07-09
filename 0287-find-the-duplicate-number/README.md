@@ -42,3 +42,90 @@
 	<li>How can we prove that at least one duplicate number must exist in <code>nums</code>?</li>
 	<li>Can you solve the problem in linear runtime complexity?</li>
 </ul>
+
+## Approach
+
+The array can be viewed as a **linked list**, where:
+
+- Each index represents a node.
+- The value at each index represents the next node to visit.
+
+Since there are `n + 1` numbers ranging from `1` to `n`, at least one number must appear more than once. This duplicate causes multiple indices to point to the same value, creating a **cycle** in the linked list.
+
+To detect this cycle, we use **Floyd's Tortoise and Hare Algorithm**.
+
+### Phase 1: Detect the Cycle
+
+Two pointers are initialized:
+
+- **Slow pointer (`i`)** moves one step at a time.
+- **Fast pointer (`j`)** moves two steps at a time.
+
+```
+slow = nums[slow]
+fast = nums[nums[fast]]
+```
+
+If a cycle exists, the two pointers will eventually meet inside the cycle.
+
+### Phase 2: Find the Entrance of the Cycle
+
+Once the pointers meet:
+
+- Reset one pointer to the beginning.
+- Move both pointers one step at a time.
+
+The point where they meet again is the **entrance of the cycle**, which corresponds to the duplicate number.
+
+### Example
+
+Input:
+
+```
+nums = [1,3,4,2,2]
+```
+
+Linked List Representation:
+
+```
+0 → 1 → 3 → 2 → 4
+          ↑     ↓
+          └─────┘
+```
+
+The cycle begins at `2`, so the duplicate number is:
+
+```
+2
+```
+
+---
+
+## Algorithm
+
+1. Initialize two pointers:
+   - `slow = nums[0]`
+   - `fast = nums[0]`
+2. Move:
+   - `slow` by one step.
+   - `fast` by two steps.
+3. Continue until both pointers meet.
+4. Reset one pointer to the start.
+5. Move both pointers one step at a time.
+6. The meeting point is the duplicate number.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - Each pointer traverses the array a constant number of times.
+
+- **Space Complexity:** `O(1)`
+  - Only two pointers are used.
+
+---
+
+## Key Idea
+
+By interpreting the array as a linked list, the duplicate number naturally forms a cycle. Floyd's Cycle Detection algorithm efficiently identifies the cycle and its entry point without modifying the array or using extra memory, making it the optimal solution.
