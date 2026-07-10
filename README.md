@@ -31,6 +31,7 @@
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0061-rotate-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0061-rotate-list) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
@@ -106,6 +107,7 @@
 | [0002-add-two-numbers](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0002-add-two-numbers) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0021-merge-two-sorted-lists) |
+| [0061-rotate-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0876-middle-of-the-linked-list) |
