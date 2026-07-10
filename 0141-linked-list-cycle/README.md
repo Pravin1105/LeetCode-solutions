@@ -40,3 +40,79 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve it using <code>O(1)</code> (i.e. constant) memory?</p>
+
+
+## Approach
+
+The solution uses **Floyd's Cycle Detection Algorithm**, also known as the **Tortoise and Hare Algorithm**, to determine whether a linked list contains a cycle.
+
+Two pointers are initialized at the head of the linked list:
+
+- `slow` moves **one node** at a time.
+- `fast` moves **two nodes** at a time.
+
+There are two possible outcomes:
+
+- If the linked list **does not contain a cycle**, the `fast` pointer will eventually reach the end of the list (`NULL`).
+- If the linked list **contains a cycle**, the `fast` pointer will eventually catch up with the `slow` pointer, causing both pointers to meet inside the cycle.
+
+As soon as the two pointers meet, a cycle is confirmed.
+
+### Example
+
+Input:
+
+```
+3 → 2 → 0 → -4
+    ↑       ↓
+    └───────┘
+```
+
+Pointer movement:
+
+| Step | Slow | Fast |
+|-----:|:----:|:----:|
+| Start | 3 | 3 |
+| 1 | 2 | 0 |
+| 2 | 0 | 2 |
+| 3 | -4 | -4 |
+
+Since both pointers meet at the same node, the linked list contains a cycle.
+
+Output:
+
+```
+true
+```
+
+---
+
+## Algorithm
+
+1. Initialize two pointers:
+   - `slow = head`
+   - `fast = head`
+2. While:
+   - `fast` is not `NULL`, and
+   - `fast->next` is not `NULL`
+   - Move:
+     - `slow = slow->next`
+     - `fast = fast->next->next`
+3. If `slow == fast`, return `true`.
+4. If the loop terminates because `fast` reaches `NULL`, return `false`.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - In the worst case, each node is visited at most a constant number of times before the pointers either meet or the list ends.
+
+- **Space Complexity:** `O(1)`
+  - Only two pointers are used regardless of the size of the linked list.
+
+---
+
+## Key Idea
+
+The fast pointer moves twice as quickly as the slow pointer. If a cycle exists, the fast pointer will eventually lap the slow pointer and both will meet inside the cycle. If there is no cycle, the fast pointer reaches the end of the list first, proving that the list is acyclic. This provides an efficient solution with linear time and constant extra space.
