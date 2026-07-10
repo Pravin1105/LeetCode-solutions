@@ -15,12 +15,10 @@ public:
         ListNode* temp = head;
         int n = 0;
         while(temp->next != NULL){
-            cout<<temp->val<<".  ";
             temp = temp->next;
             n++;
         }
         n++;
-        cout<<n;
         k = k%n;
         k = n-k-1;
         temp->next = head;
