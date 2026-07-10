@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
+| [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
 | [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0056-merge-intervals](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
@@ -22,6 +23,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
+| [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
 ## Two Pointers
