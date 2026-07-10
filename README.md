@@ -66,6 +66,7 @@
 ## Recursion
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0231-power-of-two) |
 ## Greedy
 |  |
@@ -92,4 +93,8 @@
 | ------- |
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
