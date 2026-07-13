@@ -24,6 +24,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
+| [0013-roman-to-integer](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
@@ -57,6 +58,7 @@
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0002-add-two-numbers) |
+| [0013-roman-to-integer](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0062-unique-paths) |
 | [0231-power-of-two](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0231-power-of-two) |
@@ -130,5 +132,6 @@
 ## String
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0151-reverse-words-in-a-string](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0151-reverse-words-in-a-string) |
 <!---LeetCode Topics End-->
