@@ -65,3 +65,102 @@ Explanation: The two lists do not intersect, so return null.
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you write a solution that runs in <code>O(m + n)</code> time and use only <code>O(1)</code> memory?
+
+
+## Approach
+
+This solution transforms the problem into a **Linked List Cycle Detection** problem using **Floyd's Tortoise and Hare Algorithm**.
+
+The key observation is:
+
+- If the two linked lists intersect, they share all nodes after the intersection point.
+- By connecting the tail of the first list to the head of the second list, an intersection creates a **cycle**.
+- If the lists do not intersect, no cycle is formed.
+
+The algorithm consists of three steps:
+
+1. Traverse the first list to find its last node.
+2. Connect the last node of the first list to the head of the second list.
+3. Use Floyd's Cycle Detection algorithm to determine whether a cycle exists.
+   - If a cycle is found, locate its entry point.
+   - The entry point is exactly the intersection node.
+4. Restore the original linked list by removing the temporary connection.
+
+### Example
+
+Input:
+
+```
+List A:
+
+4 → 1
+      \
+       8 → 4 → 5
+
+List B:
+
+5 → 6 → 1
+          \
+           8 → 4 → 5
+```
+
+Temporarily connect the tail of List A to the head of List B:
+
+```
+4 → 1
+      \
+       8 → 4 → 5
+                |
+                v
+5 → 6 → 1 ------┘
+```
+
+A cycle is formed.
+
+Using Floyd's algorithm:
+
+- The fast and slow pointers meet inside the cycle.
+- Reset one pointer to the beginning.
+- Move both pointers one step at a time.
+- Their meeting point is the intersection node.
+
+Output:
+
+```
+8
+```
+
+---
+
+## Algorithm
+
+1. Traverse List A to find its last node.
+2. Connect the last node to the head of List B.
+3. Initialize:
+   - `slow = headA`
+   - `fast = headA`
+4. Run Floyd's Cycle Detection:
+   - Move `slow` one step.
+   - Move `fast` two steps.
+5. If the pointers meet:
+   - Reset `fast` to `headA`.
+   - Move both pointers one step at a time.
+   - Their meeting point is the intersection node.
+6. Restore the original list by setting the last node's `next` pointer to `NULL`.
+7. Return the intersection node if found; otherwise return `NULL`.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(m + n)`
+  - One traversal to find the tail of List A and one traversal using Floyd's algorithm.
+
+- **Space Complexity:** `O(1)`
+  - Only a constant number of pointers are used.
+
+---
+
+## Key Idea
+
+By temporarily linking the tail of the first list to the head of the second list, the intersection problem is converted into a cycle detection problem. If the lists intersect, the shared nodes form a cycle, and Floyd's Cycle Detection algorithm efficiently identifies the cycle's entry point, which is precisely the intersection node. The temporary modification is undone before returning, preserving the original structure of both linked lists.
