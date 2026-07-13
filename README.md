@@ -25,6 +25,7 @@
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
 | [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
+| [0142-linked-list-cycle-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
@@ -35,6 +36,7 @@
 | [0061-rotate-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0061-rotate-list) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
+| [0142-linked-list-cycle-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
@@ -111,6 +113,7 @@
 | [0021-merge-two-sorted-lists](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0021-merge-two-sorted-lists) |
 | [0061-rotate-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
+| [0142-linked-list-cycle-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0206-reverse-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0876-middle-of-the-linked-list) |
