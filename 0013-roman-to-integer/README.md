@@ -55,3 +55,102 @@ M             1000</pre>
 	<li><code>s</code> contains only&nbsp;the characters <code>(&#39;I&#39;, &#39;V&#39;, &#39;X&#39;, &#39;L&#39;, &#39;C&#39;, &#39;D&#39;, &#39;M&#39;)</code>.</li>
 	<li>It is <strong>guaranteed</strong>&nbsp;that <code>s</code> is a valid roman numeral in the range <code>[1, 3999]</code>.</li>
 </ul>
+
+## Approach
+
+Each Roman numeral has a fixed integer value:
+
+| Symbol | Value |
+|:------:|------:|
+| I | 1 |
+| V | 5 |
+| X | 10 |
+| L | 50 |
+| C | 100 |
+| D | 500 |
+| M | 1000 |
+
+The solution first stores these mappings in a hash map for constant-time lookup.
+
+The string is then traversed **from right to left**.
+
+### Key Observation
+
+In Roman numerals:
+
+- If a symbol is **greater than or equal to** the symbol on its right, it is **added**.
+- If a symbol is **smaller** than the symbol on its right, it is **subtracted**.
+
+Examples:
+
+```
+VI
+
+5 + 1 = 6
+```
+
+```
+IV
+
+5 - 1 = 4
+```
+
+Since we traverse from right to left, the value of the symbol to the right is already known, making it easy to determine whether to add or subtract the current symbol.
+
+---
+
+## Example
+
+Input:
+
+```
+"MCMXCIV"
+```
+
+Traversal:
+
+| Symbol | Operation | Total |
+|:------:|:---------:|------:|
+| V | +5 | 5 |
+| I | -1 | 4 |
+| C | +100 | 104 |
+| X | -10 | 94 |
+| M | +1000 | 1094 |
+| C | -100 | 994 |
+| M | +1000 | 1994 |
+
+Output:
+
+```
+1994
+```
+
+---
+
+## Algorithm
+
+1. Store the value of each Roman numeral in a hash map.
+2. Initialize the answer with the value of the last character.
+3. Traverse the string from right to left.
+4. For each character:
+   - If its value is smaller than the value of the character to its right:
+     - Subtract it from the answer.
+   - Otherwise:
+     - Add it to the answer.
+5. Return the final answer.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - Each Roman numeral is processed exactly once.
+
+- **Space Complexity:** `O(1)`
+  - The hash map contains only the seven Roman numeral symbols, requiring constant extra space.
+
+---
+
+## Key Idea
+
+Roman numerals use **subtractive notation**, where a smaller numeral placed before a larger one indicates subtraction. By traversing the string from right to left, the algorithm can determine whether each symbol should be added or subtracted by simply comparing it with its immediate right neighbor, resulting in a clean linear-time solution.
