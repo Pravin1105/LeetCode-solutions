@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
+| [0033-search-in-rotated-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
 | [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0056-merge-intervals](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0056-merge-intervals) |
@@ -101,6 +102,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
 ## Divide and Conquer
