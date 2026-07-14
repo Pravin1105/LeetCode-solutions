@@ -37,3 +37,93 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Your algorithm&#39;s time complexity must be better than <code>O(n log n)</code>, where n is the array&#39;s size.</p>
+
+## Approach
+
+The solution uses a combination of a **Hash Map** and a **Max Heap (Priority Queue)**.
+
+The algorithm works in two phases:
+
+1. **Count the frequency** of every element using a hash map.
+2. **Retrieve the `k` most frequent elements** by storing the frequency-element pairs in a max heap.
+
+The priority queue automatically keeps the element with the highest frequency at the top, allowing us to efficiently extract the `k` most frequent elements.
+
+### Example
+
+Input:
+
+```
+nums = [1,1,1,2,2,3]
+k = 2
+```
+
+Frequency Map:
+
+```
+1 → 3
+2 → 2
+3 → 1
+```
+
+Max Heap:
+
+```
+(3,1)
+(2,2)
+(1,3)
+```
+
+Extract the top `k = 2` elements:
+
+```
+1
+2
+```
+
+Output:
+
+```
+[1,2]
+```
+
+---
+
+## Algorithm
+
+1. Create a hash map to store the frequency of each element.
+2. Traverse the array and update the frequency count.
+3. Insert every `(frequency, element)` pair into a max heap.
+4. Repeat `k` times:
+   - Extract the top element from the heap.
+   - Add its value to the answer.
+5. Return the resulting list.
+
+---
+
+## Complexity Analysis
+
+Let:
+
+- `n` = size of the input array
+- `m` = number of distinct elements
+
+- **Time Complexity:** `O(n + m log m)`
+  - Building the frequency map: `O(n)`
+  - Inserting `m` elements into the heap: `O(m log m)`
+  - Extracting the top `k` elements: `O(k log m)`
+
+  Since `k ≤ m`, the overall complexity is:
+
+  ```
+  O(n + m log m)
+  ```
+
+- **Space Complexity:** `O(m)`
+  - The hash map and priority queue each store at most one entry for every distinct element.
+
+---
+
+## Key Idea
+
+The hash map efficiently counts the frequency of each element, while the max heap keeps the elements ordered by frequency. By repeatedly extracting the heap's maximum element, the algorithm obtains the `k` most frequent elements without sorting the entire array.
