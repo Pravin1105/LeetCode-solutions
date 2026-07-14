@@ -51,3 +51,78 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
+
+## Approach
+
+The solution performs a **Preorder Traversal** of the binary tree using **recursion**.
+
+In a preorder traversal, the nodes are visited in the following order:
+
+1. Visit the current node.
+2. Traverse the left subtree.
+3. Traverse the right subtree.
+
+A helper function recursively processes each node and stores the visited values in a vector.
+
+### Example
+
+Input:
+
+```
+      1
+       \
+        2
+       /
+      3
+```
+
+Traversal order:
+
+```
+Visit 1
+
+↓
+
+Visit 2
+
+↓
+
+Visit 3
+```
+
+Output:
+
+```
+[1,2,3]
+```
+
+---
+
+## Algorithm
+
+1. Create an empty vector to store the traversal.
+2. Define a recursive helper function:
+   - If the current node is `NULL`, return.
+   - Add the current node's value to the vector.
+   - Traverse the left subtree.
+   - Traverse the right subtree.
+3. Call the helper function starting from the root.
+4. Return the resulting vector.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - Every node is visited exactly once.
+
+- **Space Complexity:** `O(h)`
+  - `h` is the height of the tree due to the recursion stack.
+  - Worst case: `O(n)` for a skewed tree.
+  - Best case (balanced tree): `O(log n)`.
+
+---
+
+## Key Idea
+
+Preorder traversal follows the **Root → Left → Right** order. By visiting the current node before recursively traversing its left and right subtrees, the algorithm generates the preorder sequence while visiting each node exactly once.
