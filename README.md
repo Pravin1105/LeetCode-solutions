@@ -11,6 +11,7 @@
 | [0056-merge-intervals](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
+| [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0120-triangle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0120-triangle) |
 | [0136-single-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0136-single-number) |
@@ -135,6 +136,7 @@
 ## Stack
 |  |
 | ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0234-palindrome-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
 ## String
 |  |
@@ -153,4 +155,8 @@
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 <!---LeetCode Topics End-->
