@@ -26,3 +26,83 @@
 	<li><code>root</code> is a binary search tree.</li>
 	<li><code>1 &lt;= val &lt;= 10<sup>7</sup></code></li>
 </ul>
+
+## Approach
+
+A **Binary Search Tree (BST)** has the following property:
+
+- All values in the **left subtree** are smaller than the current node.
+- All values in the **right subtree** are larger than the current node.
+
+Using this property, the search can ignore half of the remaining tree at each step.
+
+For the current node:
+
+- If its value is equal to the target, the required node has been found.
+- If the target is smaller, recursively search the left subtree.
+- If the target is larger, recursively search the right subtree.
+
+If the traversal reaches a `NULL` node, the target does not exist in the tree.
+
+### Example
+
+Input:
+
+```
+        4
+       / \
+      2   7
+     / \
+    1   3
+
+Target = 2
+```
+
+Search path:
+
+```
+4
+
+↓
+
+2
+```
+
+Output:
+
+```
+      2
+     / \
+    1   3
+```
+
+---
+
+## Algorithm
+
+1. If the current node is `NULL`, return `NULL`.
+2. Compare the current node's value with the target:
+   - If equal, return the current node.
+   - If the target is smaller, recursively search the left subtree.
+   - If the target is larger, recursively search the right subtree.
+3. Return the result of the recursive search.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(h)`
+  - `h` is the height of the tree.
+  - Best/Average case (balanced BST): `O(log n)`
+  - Worst case (skewed BST): `O(n)`
+
+- **Space Complexity:** `O(h)`
+  - Due to the recursion stack.
+  - Best/Average case: `O(log n)`
+  - Worst case: `O(n)`
+
+---
+
+## Key Idea
+
+The Binary Search Tree property allows the search to eliminate one entire subtree at every step. Instead of traversing all nodes, the algorithm follows only the path where the target can exist, making the search significantly more efficient than a general binary tree traversal.
