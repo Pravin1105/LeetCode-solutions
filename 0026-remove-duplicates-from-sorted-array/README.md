@@ -49,3 +49,118 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>nums</code> is sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+## Approach
+
+Since the array is already sorted, all duplicate elements appear consecutively.
+
+The solution uses two pointers:
+
+- `i` → Points to the last unique element found.
+- `j` → Traverses the array to find the next unique element.
+
+Initially:
+
+- `i` starts at the first element.
+- `j` starts at the second element.
+
+As `j` moves through the array:
+
+- If `nums[j]` is equal to `nums[i]`, it is a duplicate and is skipped.
+- If `nums[j]` is different, a new unique element has been found:
+  - Increment `i`.
+  - Swap `nums[i]` and `nums[j]` to place the unique element immediately after the previously found unique elements.
+
+After the traversal, all unique elements occupy the first `i + 1` positions of the array.
+
+---
+
+## Example
+
+Input:
+
+```
+nums = [1,1,2,2,3,4,4]
+```
+
+Processing:
+
+```
+i = 0, j = 1
+
+[1,1,2,2,3,4,4]
+```
+
+`1` is a duplicate.
+
+```
+j = 2
+
+Found 2
+
+↓
+
+[1,2,1,2,3,4,4]
+```
+
+Next unique element:
+
+```
+Found 3
+
+↓
+
+[1,2,3,2,1,4,4]
+```
+
+Next unique element:
+
+```
+Found 4
+
+↓
+
+[1,2,3,4,1,2,4]
+```
+
+The first four elements are the unique values:
+
+```
+[1,2,3,4]
+```
+
+Return:
+
+```
+4
+```
+
+---
+
+## Algorithm
+
+1. Initialize:
+   - `i = 0`
+   - `j = 1`
+2. Traverse the array using `j`.
+3. If `nums[j]` is different from `nums[i]`:
+   - Increment `i`.
+   - Swap `nums[i]` and `nums[j]`.
+4. Continue until the end of the array.
+5. Return `i + 1`, which represents the number of unique elements.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - The array is traversed exactly once.
+
+- **Space Complexity:** `O(1)`
+  - The duplicates are removed in-place without using additional memory.
+
+---
+
+## Key Idea
+
+Because the array is sorted, duplicate elements appear next to each other. By maintaining one pointer for the last unique element and another for scanning the array, each newly discovered unique element is moved to the front of the array. This produces the required in-place result in linear time using constant extra space.
