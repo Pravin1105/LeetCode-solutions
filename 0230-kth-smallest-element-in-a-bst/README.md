@@ -26,3 +26,71 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> If the BST is modified often (i.e., we can do insert and delete operations) and you need to find the kth smallest frequently, how would you optimize?</p>
+
+## Approach
+
+A **Binary Search Tree (BST)** has the property that:
+
+- All values in the left subtree are smaller than the current node.
+- All values in the right subtree are larger than the current node.
+
+Because of this property, performing an **inorder traversal (Left → Root → Right)** visits the nodes in **ascending order**.
+
+The solution performs an inorder traversal of the BST and stores the visited node values in a vector. Since the vector is sorted, the **kth smallest element** is simply the element at index `k - 1`.
+
+### Example
+
+Input:
+
+```
+        5
+       / \
+      3   6
+     / \
+    2   4
+   /
+  1
+
+k = 3
+```
+
+Inorder Traversal:
+
+```
+1 → 2 → 3 → 4 → 5 → 6
+```
+
+The 3rd smallest element is:
+
+```
+3
+```
+
+---
+
+## Algorithm
+
+1. Create an empty vector.
+2. Perform an inorder traversal of the BST:
+   - Traverse the left subtree.
+   - Store the current node's value.
+   - Traverse the right subtree.
+3. After traversal, the vector contains all node values in sorted order.
+4. Return the element at index `k - 1`.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - Every node is visited exactly once during the inorder traversal.
+
+- **Space Complexity:** `O(n)`
+  - The vector stores all `n` node values.
+  - The recursion stack requires `O(h)` space, where `h` is the height of the tree.
+
+---
+
+## Key Idea
+
+An inorder traversal of a Binary Search Tree always produces the node values in **sorted order**. By storing this traversal in a vector, the kth smallest element can be directly accessed using its index, making the implementation simple and intuitive.
