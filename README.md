@@ -146,6 +146,7 @@
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0020-valid-parentheses) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0144-binary-tree-preorder-traversal) |
@@ -157,6 +158,7 @@
 | [0003-longest-substring-without-repeating-characters](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0008-string-to-integer-atoi](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0008-string-to-integer-atoi) |
 | [0013-roman-to-integer](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0013-roman-to-integer) |
+| [0020-valid-parentheses](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0020-valid-parentheses) |
 | [0151-reverse-words-in-a-string](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0151-reverse-words-in-a-string) |
 ## Heap (Priority Queue)
 |  |
