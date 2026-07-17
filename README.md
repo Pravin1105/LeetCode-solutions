@@ -5,6 +5,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
 | [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
@@ -43,6 +44,7 @@
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0061-rotate-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0061-rotate-list) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
