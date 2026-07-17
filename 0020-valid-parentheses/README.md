@@ -56,3 +56,142 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>
 </ul>
+
+## Approach
+
+The solution uses a **stack** to keep track of opening brackets while traversing the string.
+
+Whenever an opening bracket is encountered:
+
+- Push it onto the stack.
+
+When a closing bracket is encountered:
+
+- Check whether the stack is non-empty.
+- Verify that the top of the stack contains the corresponding opening bracket.
+- If it matches, pop the opening bracket from the stack.
+- Otherwise, the string is invalid.
+
+After processing the entire string:
+
+- If the stack is empty, every opening bracket has been matched with its corresponding closing bracket.
+- Otherwise, some opening brackets remain unmatched, so the string is invalid.
+
+---
+
+## Example 1
+
+Input:
+
+```
+s = "()[]{}"
+```
+
+Processing:
+
+```
+(
+
+↓
+
+)
+
+Stack: Empty
+
+↓
+
+[
+
+↓
+
+]
+
+Stack: Empty
+
+↓
+
+{
+
+↓
+
+}
+
+Stack: Empty
+```
+
+Output:
+
+```
+true
+```
+
+---
+
+## Example 2
+
+Input:
+
+```
+s = "([)]"
+```
+
+Processing:
+
+```
+(
+
+↓
+
+[
+```
+
+Encounter:
+
+```
+)
+```
+
+Top of the stack:
+
+```
+[
+```
+
+The brackets do not match.
+
+Output:
+
+```
+false
+```
+
+---
+
+## Algorithm
+
+1. Create an empty stack.
+2. Traverse each character in the string.
+3. If the character is an opening bracket:
+   - Push it onto the stack.
+4. Otherwise (closing bracket):
+   - If the stack is empty, return `false`.
+   - If the top of the stack is the matching opening bracket:
+     - Pop it.
+   - Otherwise, return `false`.
+5. After the traversal, return `true` if the stack is empty; otherwise return `false`.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - Each bracket is pushed onto and popped from the stack at most once.
+
+- **Space Complexity:** `O(n)`
+  - In the worst case, all characters are opening brackets and are stored in the stack.
+
+---
+
+## Key Idea
+
+A stack naturally models the nested structure of parentheses. Every opening bracket is stored until its corresponding closing bracket is encountered. If every closing bracket matches the most recently opened bracket and no unmatched brackets remain, the string is valid.
