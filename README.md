@@ -25,6 +25,7 @@
 | [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
+| [0496-next-greater-element-i](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
 ## Hash Table
 |  |
@@ -40,6 +41,7 @@
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
+| [0496-next-greater-element-i](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 ## Two Pointers
 |  |
 | ------- |
@@ -152,6 +154,7 @@
 | [0144-binary-tree-preorder-traversal](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0234-palindrome-linked-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0234-palindrome-linked-list) |
+| [0496-next-greater-element-i](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 ## String
 |  |
 | ------- |
@@ -176,6 +179,7 @@
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0496-next-greater-element-i](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 ## Tree
 |  |
 | ------- |
