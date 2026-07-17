@@ -11,6 +11,7 @@
 | [0056-merge-intervals](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0073-set-matrix-zeroes) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0120-triangle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0120-triangle) |
@@ -29,6 +30,7 @@
 | [0001-two-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0013-roman-to-integer) |
 | [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
+| [0073-set-matrix-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0073-set-matrix-zeroes) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
@@ -77,6 +79,7 @@
 | [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0073-set-matrix-zeroes) |
 ## Bit Manipulation
 |  |
 | ------- |
