@@ -20,6 +20,7 @@
 | [0136-single-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0136-single-number) |
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0198-house-robber](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0198-house-robber) |
+| [0217-contains-duplicate](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
@@ -39,6 +40,7 @@
 | [0142-linked-list-cycle-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
@@ -115,6 +117,7 @@
 | [0056-merge-intervals](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
