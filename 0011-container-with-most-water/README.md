@@ -30,3 +30,93 @@
 	<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+
+## Approach
+
+The solution uses the **Two Pointer** technique to find the maximum amount of water that can be contained between two vertical lines.
+
+Two pointers are initialized at opposite ends of the array:
+
+- `i` → left pointer.
+- `j` → right pointer.
+
+The area between two lines is determined by:
+
+```text
+Area = min(height[i], height[j]) × (j - i)
+```
+
+The limiting factor is always the **shorter line**.
+
+Therefore, after calculating the current area:
+
+- If `height[i] < height[j]`, move `i` to the right.
+- Otherwise, move `j` to the left.
+
+The reasoning is that moving the pointer corresponding to the taller line cannot improve the area while the shorter line remains unchanged, because the width decreases and the minimum height cannot increase.
+
+### Example
+
+Input:
+
+```text
+height = [1,8,6,2,5,4,8,3,7]
+```
+
+Start with:
+
+```text
+i = 0
+j = 8
+```
+
+Current area:
+
+```text
+min(1,7) × (8-0) = 8
+```
+
+Since the left height is smaller:
+
+```text
+i++
+```
+
+The process continues until the two pointers meet.
+
+Maximum area:
+
+```text
+49
+```
+
+---
+
+## Algorithm
+
+1. Initialize:
+   - `i = 0`
+   - `j = n - 1`
+   - `ans = INT_MIN`
+2. While `i < j`:
+   - Calculate the area using the two current heights.
+   - Update `ans` if the current area is larger.
+   - Move the pointer corresponding to the shorter height.
+3. Return `ans`.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - Each pointer moves only toward the other pointer, so at most `n` positions are processed.
+
+- **Space Complexity:** `O(1)`
+  - Only a constant number of variables are used.
+
+---
+
+## Key Idea
+
+The area is limited by the **shorter of the two heights**. Moving the taller pointer cannot produce a better area because the width decreases while the limiting height remains unchanged or decreases. Therefore, only the pointer at the shorter height is moved, allowing the maximum area to be found in a single pass.
