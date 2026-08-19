@@ -56,3 +56,87 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 	<li><code>0 &lt;= nums[i] &lt;= 50</code></li>
 	<li><code>0 &lt;= val &lt;= 100</code></li>
 </ul>
+
+
+## Approach
+
+The solution uses a **Two Pointer** technique to remove all occurrences of a given value `val` from the array **in-place**.
+
+Two indices are used:
+
+- `i` → Traverses every element of the array.
+- `j` → Tracks the position where the next valid element should be placed.
+
+For every element:
+
+- If `nums[i]` is different from `val`, it is a valid element.
+  - Copy it to `nums[j]`.
+  - Increment `j`.
+- If `nums[i] == val`, simply skip it.
+
+After the traversal, the first `j` positions contain all elements that are different from `val`.
+
+The value of `j` is therefore the new length of the valid portion of the array.
+
+### Example
+
+Input:
+
+```text
+nums = [3,2,2,3]
+val = 3
+```
+
+Processing:
+
+```text
+3 → skip
+
+2 → nums[0] = 2
+
+2 → nums[1] = 2
+
+3 → skip
+```
+
+Result:
+
+```text
+[2,2,_,_]
+```
+
+Returned length:
+
+```text
+2
+```
+
+Only the first two positions are considered part of the resulting array.
+
+---
+
+## Algorithm
+
+1. Initialize `j = 0`.
+2. Traverse the array using `i`.
+3. If `nums[i] != val`:
+   - Copy `nums[i]` to `nums[j]`.
+   - Increment `j`.
+4. Ignore elements equal to `val`.
+5. Return `j` as the new length.
+
+---
+
+## Complexity Analysis
+
+- **Time Complexity:** `O(n)`
+  - The array is traversed exactly once.
+
+- **Space Complexity:** `O(1)`
+  - The array is modified in-place using only two pointers.
+
+---
+
+## Key Idea
+
+Instead of physically deleting elements or shifting the array repeatedly, the solution **compacts all elements that are not equal to `val` toward the beginning of the array**. The pointer `j` always represents the next position where a valid element should be placed, resulting in an efficient in-place solution.
