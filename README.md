@@ -21,6 +21,7 @@
 | [0120-triangle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0120-triangle) |
 | [0136-single-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0137-single-number-ii) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0169-majority-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0169-majority-element) |
 | [0198-house-robber](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0198-house-robber) |
 | [0217-contains-duplicate](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0217-contains-duplicate) |
@@ -133,6 +134,7 @@
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0074-search-a-2d-matrix](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0074-search-a-2d-matrix) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0540-single-element-in-a-sorted-array) |
 ## Divide and Conquer
