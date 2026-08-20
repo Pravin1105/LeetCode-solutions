@@ -31,6 +31,7 @@
 | [0239-sliding-window-maximum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
 | [0240-search-a-2d-matrix-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0260-single-number-iii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0260-single-number-iii) |
+| [0274-h-index](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0274-h-index) |
 | [0283-move-zeroes](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
@@ -136,6 +137,7 @@
 | [0215-kth-largest-element-in-an-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0229-majority-element-ii) |
+| [0274-h-index](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0274-h-index) |
 | [0347-top-k-frequent-elements](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0455-assign-cookies](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0455-assign-cookies) |
 ## Binary Search
@@ -274,4 +276,8 @@
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0239-sliding-window-maximum) |
+## Counting Sort
+|  |
+| ------- |
+| [0274-h-index](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0274-h-index) |
 <!---LeetCode Topics End-->
