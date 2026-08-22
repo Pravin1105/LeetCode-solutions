@@ -10,6 +10,7 @@
 | [0027-remove-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0041-first-missing-positive](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0041-first-missing-positive) |
+| [0042-trapping-rain-water](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0042-trapping-rain-water) |
 | [0048-rotate-image](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0048-rotate-image) |
 | [0056-merge-intervals](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
@@ -62,6 +63,7 @@
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0027-remove-element) |
+| [0042-trapping-rain-water](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0061-rotate-list) |
 | [0088-merge-sorted-array](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0141-linked-list-cycle) |
@@ -79,6 +81,7 @@
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0042-trapping-rain-water) |
 | [0062-unique-paths](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0064-minimum-path-sum) |
@@ -181,6 +184,7 @@
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0020-valid-parentheses) |
+| [0042-trapping-rain-water](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0144-binary-tree-preorder-traversal) |
@@ -213,6 +217,7 @@
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0496-next-greater-element-i](https://github.com/Pravin1105/LeetCode-solutions/tree/master/0496-next-greater-element-i) |
 ## Tree
